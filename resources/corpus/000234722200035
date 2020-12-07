@@ -1,0 +1,2 @@
+Majority logic gate for magnetic quantum-dot cellular automata
+We describe the operation of, and demonstrate logic functionality in, networks of physically coupled, nanometer-scale magnets designed for digital computation in magnetic quantum-dot cellular automata (MQCA) systems. MQCA offer low power dissipation and high integration density of functional elements and operate at room temperature. The basic MQCA logic gate, that is, the three-input majority logic gate, is demonstrated.

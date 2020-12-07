@@ -1,0 +1,2 @@
+Manipulating the quantum state of an electrical circuit
+We have designed and operated a superconducting tunnel junction circuit that behaves as a two-level atom: the "quantronium." An arbitrary evolution of its quantum state can be programmed with a series of microwave pulses, and a projective measurement of the state can be performed by a pulsed readout subcircuit. The measured quality factor of quantum coherence Q(phi) congruent to 25,000 is sufficiently high that a solid-state quantum processor based on this type of circuit can be envisioned.

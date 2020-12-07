@@ -1,0 +1,2 @@
+Oversimplifying quantum factoring
+Shor's quantum factoring algorithm exponentially outperforms known classical methods. Previous experimental implementations have used simplifications dependent on knowing the factors in advance. However, as we show here, all composite numbers admit simplification of the algorithm to a circuit equivalent to flipping coins. The difficulty of a particular experiment therefore depends on the level of simplification chosen, not the size of the number factored. Valid implementations should not make use of the answer sought.

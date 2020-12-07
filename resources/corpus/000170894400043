@@ -1,0 +1,2 @@
+Zipf distribution of US firm sizes
+Analyses of firm sizes have historically used data that included limited samples of small firms, data typically described by lognormal distributions. Using data on the entire population of tax-paying firms in the United States, I show here that the Zipf distribution characterizes firm sizes: the probability a firm is larger than size s is inversely proportional to s. These results hold for data from multiple years and for various definitions of firm size.

@@ -1,0 +1,2 @@
+Solution of a 20-variable 3-SAT problem on a DNA computer
+A 20-variable instance of the NP-complete three-satisfiability (3-SAT) problem was solved on a simple DNA computer. The unique answer was found after an exhaustive search of more than 1 million (2(20)) possibilities. This computational problem may be the largest yet solved by nonelectronic means. Problems of this size appear to be beyond the normal range of unaided human computation.

@@ -1,0 +1,2 @@
+Extended Boltzmann kinetic equation for turbulent flows
+Complex fluid physics can be modeled using an extended kinetic (Boltzmann) equation in a more efficient way than using the continuum Navier-Stokes equations. Here, we explain this method for modeling fluid turbulence and show its effectiveness with the use of a computationally efficient implementation in terms of a discrete or "lattice" Boltzmann equation.
