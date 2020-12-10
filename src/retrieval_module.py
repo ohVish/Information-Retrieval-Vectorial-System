@@ -41,29 +41,30 @@ def retrieve_documents():
     # Inicializamos los gestores de filtros
     filter_handlerC,filter_handlerT = init_filters()
 
-    # Leemos la consulta del usuario
-    query = input("Enter your query (Press 'Enter' to finish)> ")
+    query = ''
+    while query != 'E':
+        # Leemos la consulta del usuario
+        query = input("Enter your query (Press 'E' to quit search engine)> ")
 
-    # Preprocesamiento de la consulta
-    text = filter_handlerC.apply_filters(query)
-    terms = text.split(' ')
-    terms = filter_handlerT.apply_filters(terms)
+        if query != 'E':
+            # Preprocesamiento de la consulta
+            text = filter_handlerC.apply_filters(query)
+            terms = text.split(' ')
+            terms = filter_handlerT.apply_filters(terms)
 
-    query_docs = query_process(terms,inv_index,doc_weights)
+            query_docs = query_process(terms,inv_index,doc_weights)
 
-    # Ordenar documentos segun ranking
-    sorted_docs = sorted(query_docs.items(),key=lambda x: x[1],reverse=True)
+            # Ordenar documentos segun ranking
+            sorted_docs = sorted(query_docs.items(),key=lambda x: x[1],reverse=True)
 
-    # Mostrar n primeros resultados
-    n = 10
-    i = 0
-    for val in sorted_docs:
-        if i==10:
-            break
-        else:
-            print('Document ID:'+str(val[0])+' (weight: '+str(val[1])+')')
-            print('Summary:')
-            print(get_summary(val[0]))
-            i+=1
-
-
+            # Mostrar n primeros resultados
+            n = 10
+            i = 0
+            for val in sorted_docs:
+                if i==10:
+                    break
+                else:
+                    print('Document ID:'+str(val[0])+' (weight: '+str(val[1])+')')
+                    print('Summary:')
+                    print(get_summary(val[0]))
+                    i+=1

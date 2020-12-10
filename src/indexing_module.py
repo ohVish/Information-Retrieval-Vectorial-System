@@ -54,8 +54,11 @@ def indexate_corpus():
     dir = './resources/corpus/' 
     files = os.listdir(dir)
     inv_index = {}
+    index = 1
     for doc in files:
         if os.path.isfile(dir+doc):
+            if index%1000 == 0:
+                print("Documentos: "+str(index))
             # Leer el texto del documento
             f = open(dir+doc,'r')
             doc_text = str(f.read())
@@ -70,6 +73,9 @@ def indexate_corpus():
             freq_values =  tf_process(terms)
             # 2da parte, TF e indice invertido
             inv_index = inv_index_process(inv_index,freq_values,doc)
+            # Cerramos el fichero
+            f.close()
+            index += 1
     # Calculamos el IDF para cada termino
     inv_index,doc_weights = idf_docweight_process(inv_index,len(files))
 
